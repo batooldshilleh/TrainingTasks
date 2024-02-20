@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter a"
+
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints,DuplicateClickableBoundsCheck"
+        tools:layout_editor_absoluteX="20dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter b"
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_margin="4dp"
+        android:id="@+id/btn_add"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_margin="4dp"
+        android:id="@+id/btn_subtraction"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:layout_margin="4dp"
+        android:id="@+id/btn_multiplication"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_margin="4dp"
+        android:id="@+id/btn_division"></Button>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:id="@+id/result_tv"
+        android:layout_margin="20dp"></TextView>
+</LinearLayout>
