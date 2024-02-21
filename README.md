@@ -42,3 +42,9 @@ Result: 8
 
 This project has no external dependencies.
 
+## Demo 
+
+
+https://github.com/batooldshilleh/calculate_android_App/assets/93814390/2df02b92-4c0e-4de5-be66-fe7ccc3885ce
+
+
