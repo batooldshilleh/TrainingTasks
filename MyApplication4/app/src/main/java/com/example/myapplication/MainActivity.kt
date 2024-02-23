@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,46 +17,69 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var etA: EditText
     private lateinit var etB: EditText
     private lateinit var resultTv: TextView
+    private lateinit var btnMove: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnAdd = findViewById(R.id.btn_add)
-        btnSub = findViewById(R.id.btn_subtraction)
-        btnMultiply = findViewById(R.id.btn_multiplication)
-        btnDivision = findViewById(R.id.btn_division)
-        etA = findViewById(R.id.et_a)
-        etB = findViewById(R.id.et_b)
-        resultTv = findViewById(R.id.result_tv)
+        btnAdd = findViewById(R.id.btnAdd)
+        btnSub = findViewById(R.id.btnSubtraction)
+        btnMultiply = findViewById(R.id.btnMultiplication)
+        btnDivision = findViewById(R.id.btnDivision)
+        etA = findViewById(R.id.etA)
+        etB = findViewById(R.id.etB)
+        resultTv = findViewById(R.id.resultTv)
+        btnMove = findViewById(R.id.nave)
         btnAdd.setOnClickListener(this)
         btnSub.setOnClickListener(this)
         btnMultiply.setOnClickListener(this)
         btnDivision.setOnClickListener(this)
+        btnMove.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
 
-        var firstNumber = etA.text.toString().toDouble()
-        var secondNumber = etB.text.toString().toDouble()
+        var firstNumberText = etA.text.toString()
+        var firstNumber = if (firstNumberText.isNotEmpty()) firstNumberText.toDouble() else 0.0
+
+        var secondNumberText = etB.text.toString()
+        var secondNumber = if (secondNumberText.isNotEmpty()) secondNumberText.toDouble() else 0.0
+
         var result = 0.0
+
+        if (v?.id == R.id.nave) {
+            navigateToActivity2()
+            return
+        }
+
         when (v?.id) {
-            R.id.btn_add -> {
+            R.id.btnAdd -> {
                 result = firstNumber + secondNumber
             }
 
-            R.id.btn_subtraction -> {
+            R.id.btnSubtraction -> {
                 result = firstNumber - secondNumber
             }
 
-            R.id.btn_multiplication -> {
+            R.id.btnMultiplication -> {
                 result = firstNumber * secondNumber
             }
 
-            R.id.btn_division -> {
+            R.id.btnDivision -> {
                 result = firstNumber / secondNumber
             }
+
+
         }
         resultTv.text = "the result = $result"
     }
+
+
+    private inline fun navigateToActivity2() {
+        val intent = Intent(this@MainActivity, MainActivity2::class.java)
+        startActivity(intent)
+        return
+    }
+
 }
