@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyCarApp</string>
+    <string name="top_image">top_image</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="company">شركة </string>
+    <string name="admin">مسؤول</string>
+    <string name="client">عميل</string>
+    <string name="loginBtn">تسجيل الدخول</string>
+    <string name="forgetPassword"> هل نسيت كلمة السر ؟</string>
+    <string name="loginQuestion">ليس لديك حساب ؟ إنشاء حساب </string>
+</resources>
