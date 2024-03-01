@@ -10,4 +10,5 @@
     <string name="loginBtn">تسجيل الدخول</string>
     <string name="forgetPassword"> هل نسيت كلمة السر ؟</string>
     <string name="loginQuestion">ليس لديك حساب ؟ إنشاء حساب </string>
+    <string name="homeTiltle">الصفحة الرئيسية</string>
 </resources>
