@@ -10,4 +10,7 @@
     <string name="loginBtn">تسجيل الدخول</string>
     <string name="forgetPassword"> هل نسيت كلمة السر ؟</string>
     <string name="loginQuestion">ليس لديك حساب ؟ إنشاء حساب </string>
+    <string name="Verification">أدخل رمز التأكد</string>
+    <string name="code">0</string>
+    <string name="Verificationbtn">تأكيد</string>
 </resources>
