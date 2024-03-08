@@ -16,11 +16,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:navigationIcon="@drawable/menu_fill0_wght400_grad0_opsz24"
         app:navigationIconTint="@android:color/white"
         app:title="@string/homeTiltle"
         app:titleCentered="true"
-        app:titleTextColor="@android:color/white"/>
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/logout_fill0_wght400_grad0_opsz24"/>
 
 
     <ListView
@@ -34,6 +34,6 @@
         android:divider="#CCCCCC"
         android:dividerHeight="1dp"
         android:paddingStart="2dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,RtlSymmetry" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
