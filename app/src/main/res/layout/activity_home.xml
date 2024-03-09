@@ -23,17 +23,21 @@
         app:navigationIcon="@drawable/logout_fill0_wght400_grad0_opsz24"/>
 
 
-    <ListView
-        android:id="@+id/slvHome"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="5dp"
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:cacheColorHint="@android:color/transparent"
         android:divider="#CCCCCC"
         android:dividerHeight="1dp"
         android:paddingStart="2dp"
-        tools:ignore="MissingConstraints,RtlSymmetry" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topAppBar"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textSize="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
