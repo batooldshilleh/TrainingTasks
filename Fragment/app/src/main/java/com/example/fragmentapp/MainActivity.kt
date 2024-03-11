@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initViewss()
-        defaultبFragment()
+        defaultFragment()
         setupClickListeners()
 
         }
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         fragmentContener = findViewById(R.id.fcvFragment1)
     }
 
-    fun defaultبFragment(){
+    fun defaultFragment(){
         supportFragmentManager.beginTransaction().apply {
             replace(fragmentContener.id,frag1)
             commit()
