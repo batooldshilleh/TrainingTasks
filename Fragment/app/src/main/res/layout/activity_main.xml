@@ -12,6 +12,7 @@
         android:id="@+id/fcvFragment1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@color/parple"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnFragment1"
         app:layout_constraintEnd_toEndOf="parent"

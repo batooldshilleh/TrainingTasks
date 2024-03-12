@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FragmentAppTask</string>
+    <string name="activity_button">Start</string>
+    <string name="name">Enter your name</string>
+    <string name="animal">Enter your favourite animal </string>
+    <string name="color">Enter your favourite color </string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="fragment_color">and your favorite color is</string>
+    <string name="fragment_animal">and your favorite animal is</string>
+    <string name="fragment_name">Hi </string>
+    <string name="frament_qustion">what is your favorite animal?</string>
+
+</resources>
