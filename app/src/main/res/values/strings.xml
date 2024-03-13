@@ -18,4 +18,10 @@
     <string name="result">Result</string>
     <string name="navigation">Navigation</string>
     <string name="back">Back</string>
+
+    <!--fragment simple-->
+    <string name="first_fragment">Fragment 1</string>
+    <string name="second_fragment">Fragment 2</string>
+    <string name="first_fragment_message">thar is a first fragment</string>
+    <string name="second_fragment_message">thar is a second fragment</string>
 </resources>
