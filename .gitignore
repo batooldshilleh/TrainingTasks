@@ -1,24 +1,14 @@
-<<<<<<< HEAD
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-=======
+
 .gradle
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
->>>>>>> b26a8c1dfb743035687775565268ff3388bae7f7
+
 .DS_Store
 /build
 /captures
 .externalNativeBuild
-<<<<<<< HEAD
+
 .cxx
 local.properties
 /build
@@ -30,7 +20,7 @@ bin/
 *.ap_
 *.dex
 .idea
-=======
+
 
 
 *.iml
@@ -65,4 +55,4 @@ build/
 local.properties
 *.log
 *.properties
->>>>>>> b26a8c1dfb743035687775565268ff3388bae7f7
+
