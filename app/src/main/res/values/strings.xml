@@ -1,0 +1,21 @@
+<resources>
+    <!--main activity-->
+    <string name="app_name">Tasks</string>
+    <string name="task1">Linear layout</string>
+    <string name="task2">Constraint layout</string>
+    <string name="task3">Login app</string>
+    <string name="task4">Simple fragment app</string>
+    <string name="task5">Fragment task</string>
+
+    <!--linear layout and constraint-->
+    <string name="Calculator">Calculator</string>
+    <string name="enterA">Enter first number</string>
+    <string name="enterB">Enter second number</string>
+    <string name="add">+</string>
+    <string name="subtraction">-</string>
+    <string name="multiplication">*</string>
+    <string name="division">/</string>
+    <string name="result">Result</string>
+    <string name="navigation">Navigation</string>
+    <string name="back">Back</string>
+</resources>
