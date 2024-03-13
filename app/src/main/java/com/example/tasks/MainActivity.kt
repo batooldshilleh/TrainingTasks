@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnLinearLayout: Button
+    private lateinit var btnFragmentTaskNav: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -22,16 +23,25 @@ class MainActivity : AppCompatActivity() {
 
     fun setupView(){
         btnLinearLayout = findViewById(R.id.btnTask1)
+        btnFragmentTaskNav = findViewById(R.id.btnTask5)
     }
 
     fun setupListener(){
         btnLinearLayout.setOnClickListener {
             navigateToFirstTask()
         }
+
+        btnFragmentTaskNav.setOnClickListener {
+            navigateToFifthTask()
+        }
     }
 
     fun navigateToFirstTask(){
         val intent = Intent(this@MainActivity, LinearLayout::class.java)
+        startActivity(intent)
+    }
+    fun navigateToFifthTask(){
+        val intent = Intent(this@MainActivity, FragmantApp::class.java)
         startActivity(intent)
     }
 }
