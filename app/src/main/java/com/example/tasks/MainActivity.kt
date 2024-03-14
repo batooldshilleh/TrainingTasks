@@ -11,9 +11,14 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
     private lateinit var btnLinearLayout: Button
 
+
     private lateinit var btnFragmentTaskNav: Button
 
     private lateinit var btnConstraintLayout: Button
+
+    private lateinit var btnLogin: Button
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,9 +33,13 @@ class MainActivity : AppCompatActivity() {
     fun setupView(){
         btnLinearLayout = findViewById(R.id.btnTask1)
 
+
         btnFragmentTaskNav = findViewById(R.id.btnTask5)
 
         btnConstraintLayout = findViewById(R.id.btnTask2)
+
+        btnLogin = findViewById(R.id.btnTask3)
+
 
     }
 
@@ -40,8 +49,14 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
         btnFragmentTaskNav.setOnClickListener {
             navigateToFifthTask()
+
+       
+        btnLogin.setOnClickListener {
+            navigateToTheardTask()
+
 
         btnConstraintLayout.setOnClickListener {
             navigateToSecondTask()
@@ -54,8 +69,14 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+
     fun navigateToFifthTask(){
         val intent = Intent(this@MainActivity, FragmantApp::class.java)
+
+
+
+    fun navigateToTheardTask(){
+        val intent = Intent(this,Login::class.java)
 
 
     fun navigateToSecondTask(){
