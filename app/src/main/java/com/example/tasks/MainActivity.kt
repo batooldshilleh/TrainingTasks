@@ -10,8 +10,11 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnLinearLayout: Button
+
     private lateinit var btnConstarintLayout: Button
     private lateinit var btnLogin: Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,17 +27,25 @@ class MainActivity : AppCompatActivity() {
 
     fun setupView(){
         btnLinearLayout = findViewById(R.id.btnTask1)
+
         btnConstarintLayout = findViewById(R.id.btnTask2)
         btnLogin = findViewById(R.id.btnTask3)
+
     }
 
     fun setupListener(){
         btnLinearLayout.setOnClickListener {
             navigateToFirstTask()
         }
-        btnConstarintLayout.setOnClickListener {  }
+
+       
         btnLogin.setOnClickListener {
             navigateToTheardTask()
+
+
+        btnConstraintLayout.setOnClickListener {
+            navigateToSecondTask()
+
         }
     }
 
@@ -43,8 +54,13 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+
     fun navigateToTheardTask(){
         val intent = Intent(this,Login::class.java)
+
+    fun navigateToSecondTask(){
+        val intent = Intent(this@MainActivity, ConstraintLayout::class.java)
+
         startActivity(intent)
     }
 }
