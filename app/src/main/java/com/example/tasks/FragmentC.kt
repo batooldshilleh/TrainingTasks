@@ -27,14 +27,12 @@ class FragmentC : Fragment(R.layout.fragment_c) {
     }
 
     private fun setupClickListeners() {
-        btnBackC.setOnClickListener {
+        btnBackC.setSafeOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         }
     }
 
     private fun showColor() {
-        val color = arguments?.getString("color")
-        val message = getString(R.string.fragment_color)
-        tvInfo.text = "$message $color"
+        tvInfo.showArgument(arguments, "color")
     }
 }

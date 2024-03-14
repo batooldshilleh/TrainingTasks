@@ -31,34 +31,23 @@ class FragmentB : Fragment(R.layout.fragment_b) {
     }
 
     private fun setupClickListeners() {
-        btnNextB.setOnClickListener {
+        btnNextB.setSafeOnClickListener {
             val color = etColor.text.toString()
-            val fragmentC = FragmentC()
-            val bundle = Bundle().apply {
-                putString("color", color)
+            val fragmentC = FragmentC().apply {
+                arguments = Bundle().apply {
+                    putString("color", color)
+                }
             }
-            fragmentC.arguments = bundle
-            requireActivity().supportFragmentManager.beginTransaction().apply {
-                setCustomAnimations(
-                    R.anim.slide_in_right,
-                    R.anim.slide_in_left
-                )
-                replace(R.id.fcvFragmints, fragmentC)
-                addToBackStack("fragment_b")
-                setReorderingAllowed(true)
-                commit()
-            }
+            navigateToFragment(fragmentC, "fragment_b")
         }
 
-        btnBackB.setOnClickListener {
+        btnBackB.setSafeOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         }
     }
 
     private fun showAnimal() {
-        val animal = arguments?.getString("animal")
-        val message = getString(R.string.fragment_animal)
-        tvAnimal.text = "$message $animal"
+        tvAnimal.showArgument(arguments, "animal")
     }
 
 }
