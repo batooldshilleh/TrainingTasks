@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var btnConstraintLayout: Button
 
+    private lateinit var btnLogin: Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,9 +31,13 @@ class MainActivity : AppCompatActivity() {
     fun setupView(){
         btnLinearLayout = findViewById(R.id.btnTask1)
 
+
         btnFragment = findViewById(R.id.btnTask4)
 
         btnConstraintLayout = findViewById(R.id.btnTask2)
+
+        btnLogin = findViewById(R.id.btnTask3)
+
 
     }
 
@@ -39,8 +46,15 @@ class MainActivity : AppCompatActivity() {
             navigateToFirstTask()
         }
 
+
         btnFragment.setOnClickListener {
             navigateToFourthTask()
+
+       
+        btnLogin.setOnClickListener {
+            navigateToTheardTask()
+
+
 
         btnConstraintLayout.setOnClickListener {
             navigateToSecondTask()
@@ -54,8 +68,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     fun navigateToFourthTask(){
         val intent = Intent(this@MainActivity, FragmentSimpleTask::class.java)
+
+    fun navigateToTheardTask(){
+        val intent = Intent(this,Login::class.java)
+
 
     fun navigateToSecondTask(){
         val intent = Intent(this@MainActivity, ConstraintLayout::class.java)

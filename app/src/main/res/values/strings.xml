@@ -19,9 +19,33 @@
     <string name="navigation">Navigation</string>
     <string name="back">Back</string>
 
+
     <!--fragment simple-->
     <string name="first_fragment">Fragment 1</string>
     <string name="second_fragment">Fragment 2</string>
     <string name="first_fragment_message">thar is a first fragment</string>
     <string name="second_fragment_message">thar is a second fragment</string>
+
+    <!--login-->
+    <string name="top_image">top_image</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="company">Company</string>
+    <string name="admin">Admin</string>
+    <string name="client">Client</string>
+    <string name="loginBtn">Login</string>
+    <string name="forgetPassword"> Forgot your password ?</string>
+    <string name="loginQuestion">Don\'t have an account?  </string>
+    <string name="createAccount">\t Create an account </string>
+    <string name="homeTiltle">Home page</string>
+    <string name="heperEmail">Enter your password</string>
+    <string name="logout">Logout</string>
+    <string name="Verification">Enter code</string>
+    <string name="code">0</string>
+    <string name="Verificationbtn">Verification</string>
+    <string name="userTypeError">User type mismatch</string>
+    <string name="emailPasswordError">Invalid email or password or chick type</string>
+    <string name="invalidEmailFormat">Invalid email format</string>
+
 </resources>
