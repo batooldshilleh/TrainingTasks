@@ -5,20 +5,12 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnLinearLayout: Button
-
-
-    private lateinit var btnFragmentTaskNav: Button
-
+    private lateinit var btnFragment: Button
     private lateinit var btnConstraintLayout: Button
-
     private lateinit var btnLogin: Button
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,61 +19,50 @@ class MainActivity : AppCompatActivity() {
 
         setupView()
         setupListener()
-
     }
 
-    fun setupView(){
+    private fun setupView() {
         btnLinearLayout = findViewById(R.id.btnTask1)
-
-
-        btnFragmentTaskNav = findViewById(R.id.btnTask5)
-
+        btnFragment = findViewById(R.id.btnTask4)
         btnConstraintLayout = findViewById(R.id.btnTask2)
-
         btnLogin = findViewById(R.id.btnTask3)
-
-
     }
 
-    fun setupListener(){
+    private fun setupListener() {
         btnLinearLayout.setOnClickListener {
             navigateToFirstTask()
         }
 
+        btnFragment.setOnClickListener {
+            navigateToFourthTask()
+        }
 
-
-        btnFragmentTaskNav.setOnClickListener {
-            navigateToFifthTask()
-
-       
         btnLogin.setOnClickListener {
-            navigateToTheardTask()
-
+            navigateToThirdTask()
+        }
 
         btnConstraintLayout.setOnClickListener {
             navigateToSecondTask()
-
         }
     }
 
-    fun navigateToFirstTask(){
+    private fun navigateToFirstTask() {
         val intent = Intent(this@MainActivity, LinearLayout::class.java)
         startActivity(intent)
     }
 
+    private fun navigateToFourthTask() {
+        val intent = Intent(this@MainActivity, FragmentSimpleTask::class.java)
+        startActivity(intent)
+    }
 
-    fun navigateToFifthTask(){
-        val intent = Intent(this@MainActivity, FragmantApp::class.java)
+    private fun navigateToThirdTask() {
+        val intent = Intent(this, Login::class.java)
+        startActivity(intent)
+    }
 
-
-
-    fun navigateToTheardTask(){
-        val intent = Intent(this,Login::class.java)
-
-
-    fun navigateToSecondTask(){
+    private fun navigateToSecondTask() {
         val intent = Intent(this@MainActivity, ConstraintLayout::class.java)
-
         startActivity(intent)
     }
 }

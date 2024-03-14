@@ -19,8 +19,7 @@
     <string name="navigation">Navigation</string>
     <string name="back">Back</string>
 
-
-    <!--fragment  task-->
+    <!--fragment task-->
     <string name="activity_button">Start</string>
     <string name="name">Enter your name</string>
     <string name="animal">Enter your favourite animal </string>
@@ -30,7 +29,6 @@
     <string name="fragment_animal">and your favorite animal is</string>
     <string name="fragment_name">Hi </string>
     <string name="frament_qustion">what is your favorite animal?</string>
-    
 
     <!--login-->
     <string name="top_image">top_image</string>
@@ -53,6 +51,4 @@
     <string name="userTypeError">User type mismatch</string>
     <string name="emailPasswordError">Invalid email or password or chick type</string>
     <string name="invalidEmailFormat">Invalid email format</string>
-
-
 </resources>

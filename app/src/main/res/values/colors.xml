@@ -2,6 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="parple">#9581B9</color>
+
     <color name="darkBlue">#063970</color>
     <color name="blue">#eef8f9</color>
 </resources>
