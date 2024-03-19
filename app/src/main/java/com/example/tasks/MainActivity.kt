@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var btnLogin: Button
 
+    private lateinit var btnNavigationComponant: Button
+
+    private lateinit var btnOnboarding: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun setupView(){
+    fun setupView() {
         btnLinearLayout = findViewById(R.id.btnTask1)
 
 
@@ -38,47 +42,45 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin = findViewById(R.id.btnTask3)
 
+        btnNavigationComponant = findViewById(R.id.btnTask6)
+
+        btnOnboarding = findViewById(R.id.btnTask7)
+
 
     }
 
-    fun setupListener(){
+    fun setupListener() {
         btnLinearLayout.setOnClickListener {
-            navigateToFirstTask()
+            navigate("com.example.tasks.linearlayout.LinearLayout")
         }
-
 
         btnFragment.setOnClickListener {
-            navigateToFourthTask()
+            navigate("com.example.tasks.fragmentapp.FragmentSimpleTask")
+        }
 
-       
         btnLogin.setOnClickListener {
-            navigateToTheardTask()
-
-
+            navigate("com.example.tasks.login.Login")
+        }
 
         btnConstraintLayout.setOnClickListener {
-            navigateToSecondTask()
+            navigate("com.example.tasks.constrainlayout.ConstraintLayout")
+        }
+        btnNavigationComponant.setOnClickListener {
+            navigate("com.example.tasks.navcomponant.NavigationComponantApp")
+        }
 
+        btnOnboarding.setOnClickListener {
+            navigate("com.example.tasks.splash.Onbording")
         }
     }
 
-    fun navigateToFirstTask(){
-        val intent = Intent(this@MainActivity, LinearLayout::class.java)
-        startActivity(intent)
+
+    fun navigate(className: String) {
+
+            val intent = Intent(this@MainActivity, Class.forName(className))
+            startActivity(intent)
+
     }
 
 
-
-    fun navigateToFourthTask(){
-        val intent = Intent(this@MainActivity, FragmentSimpleTask::class.java)
-
-    fun navigateToTheardTask(){
-        val intent = Intent(this,Login::class.java)
-
-
-    fun navigateToSecondTask(){
-        val intent = Intent(this@MainActivity, ConstraintLayout::class.java)
-
-        startActivity(intent)
-    }
 }

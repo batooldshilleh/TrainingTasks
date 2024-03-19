@@ -6,6 +6,7 @@
     <string name="task3">Login app</string>
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
+    <string name="task7">Onboarding Screen</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
@@ -47,5 +48,27 @@
     <string name="userTypeError">User type mismatch</string>
     <string name="emailPasswordError">Invalid email or password or chick type</string>
     <string name="invalidEmailFormat">Invalid email format</string>
+
+    <!--Navigation Component-->
+    <string name="navigation_component">Navigation Component</string>
+    <string name="one_fragment">1</string>
+    <string name="two_fragment">2</string>
+    <string name="btn_nave">Next Activity</string>
+    <string name="fragment_d">Fragment D</string>
+    <string name="fragment_e">Fragment e</string>
+    <string name="fragment_f">Fragment f</string>
+    <string name="first_splash_title">Learn Android </string>
+    <string name="first_splash_descreption">Welcome to Android app development! This journey will equip you with the skills to create powerful, inspiring applications. Let\'s dive in and start building together! </string>
+    <string name="second_splash_title">Kotlin </string>
+    <string name="second_splash_descreption">Welcome to Kotlin! This language offers concise syntax and powerful features for modern application development. Let\'s dive in and explore its potential together! </string>
+    <string name="theard_splash_title">Android View</string>
+    <string name="theard_splash_descreption">Welcome to Android XML! It\'s your toolkit for crafting intuitive app interfaces. Let\'s dive in and design! </string>
+    <string name="next">Next</string>
+    <string name="end">Finish</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="welcom">Hi </string>
+
+
 
 </resources>
