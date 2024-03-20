@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var btnLogin: Button
 
+    private lateinit var btnNavigationComponant: Button
 
+    private lateinit var btnOnboarding: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,15 +35,15 @@ class MainActivity : AppCompatActivity() {
     fun setupView() {
         btnLinearLayout = findViewById(R.id.btnTask1)
 
-
         btnFragment = findViewById(R.id.btnTask4)
 
         btnConstraintLayout = findViewById(R.id.btnTask2)
 
         btnLogin = findViewById(R.id.btnTask3)
 
+        btnNavigationComponant = findViewById(R.id.btnTask6)
 
-
+        btnOnboarding = findViewById(R.id.btnTask7)
 
     }
 
@@ -62,6 +64,13 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.constrainlayout.ConstraintLayout")
         }
 
+        btnNavigationComponant.setOnClickListener {
+            navigate("com.example.tasks.naveComponent.NavigationComponantApp")
+        }
+
+        btnOnboarding.setOnClickListener {
+            navigate("com.example.tasks.splash.Onbording")
+        }
     }
 
 
