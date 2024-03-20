@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var btnLogin: Button
 
+    private lateinit var btnNavigationComponant: Button
+
+
+
 
 
 
@@ -40,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin = findViewById(R.id.btnTask3)
 
-
+        btnNavigationComponant = findViewById(R.id.btnTask6)
 
 
     }
@@ -62,6 +66,9 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.constrainlayout.ConstraintLayout")
         }
 
+        btnNavigationComponant.setOnClickListener {
+            navigate("com.example.tasks.naveComponent.NavigationComponantApp")
+        }
     }
 
 
