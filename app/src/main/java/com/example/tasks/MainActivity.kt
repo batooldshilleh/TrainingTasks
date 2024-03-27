@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var btnLinearLayout: Button
 
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnConstraintLayout: Button
 
     private lateinit var btnLogin: Button
+
+    private lateinit var btnRecyclerView: Button
 
 
 
@@ -41,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnTask3)
 
 
-
+        btnRecyclerView = findViewById(R.id.btnTask8)
 
     }
 
@@ -62,13 +65,20 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.constrainlayout.ConstraintLayout")
         }
 
+        btnRecyclerView.setOnClickListener {
+            navigate("com.example.tasks.recyclerViewHome.RecyclerViewListsActivity")
+        }
+
+
     }
 
 
-    fun navigate(className: String) {
+    fun navigate(className: String, requestCode: Int? = null) {
 
         val intent = Intent(this@MainActivity, Class.forName(className))
-        startActivity(intent)
+
+            startActivity(intent)
+
 
     }
 
