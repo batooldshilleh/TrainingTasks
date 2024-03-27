@@ -161,7 +161,7 @@ class RecyclerViewListsActivity : AppCompatActivity() {
     private fun showChooseImageSourceDialog() {
         val options = arrayOf<CharSequence>(
             getString(R.string.gallery),
-            getString(R.string.gallery)
+            getString(R.string.camera)
         )
         val builder = AlertDialog.Builder(this)
         builder.setTitle(R.string.camera_title)
