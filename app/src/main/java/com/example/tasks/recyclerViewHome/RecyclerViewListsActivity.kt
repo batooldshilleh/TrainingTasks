@@ -138,6 +138,16 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         ) == PackageManager.PERMISSION_GRANTED
     }
 
+    private fun arePermissionsDenied(): Boolean {
+        return REQUIRED_PERMISSIONS.any {
+            ContextCompat.checkSelfPermission(
+                baseContext, it
+            ) == PackageManager.PERMISSION_DENIED
+        }
+    }
+
+
+
     override fun onDestroy() {
         super.onDestroy()
         cameraExecutor.shutdown()

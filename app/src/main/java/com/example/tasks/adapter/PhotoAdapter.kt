@@ -5,20 +5,30 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-
-import com.example.tasks.model.PhotoModel
 import com.example.tasks.R
+import com.example.tasks.model.PhotoModel
 
 class PhotoAdapter(
-    private val photoList: MutableList<PhotoModel>,
-    val  onDeleteClick: (position: Int) -> Unit
+    private var photoList: MutableList<PhotoModel>,
+    private val onDeleteClick: (position: Int) -> Unit
 ) : RecyclerView.Adapter<PhotoAdapter.PhotoViewHolder>() {
-   // constructor(photoList:MutableList<PhotoModel>, rec: (position: Int) -> Unit) : this()
 
-    interface OnItemClickListener {
-        fun onDeleteClick(position: Int)
+    inner class PhotoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tvName: TextView = itemView.findViewById(R.id.textView)
+        val imageView: ImageView = itemView.findViewById(R.id.imageView)
+        val btnDelete: ImageView = itemView.findViewById(R.id.button2)
+
+        init {
+            btnDelete.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    onDeleteClick(position)
+                }
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
@@ -33,19 +43,33 @@ class PhotoAdapter(
         Glide.with(holder.itemView.context)
             .load(currentItem.imageUrl)
             .circleCrop()
-            .override(500,500)
+            .override(500, 500)
             .into(holder.imageView)
-
-        holder.btnDelete.setOnClickListener {
-            onDeleteClick(position)
-        }
     }
 
     override fun getItemCount() = photoList.size
 
-    inner class PhotoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvName: TextView = itemView.findViewById(R.id.textView)
-        val imageView: ImageView = itemView.findViewById(R.id.imageView)
-        val btnDelete: ImageView = itemView.findViewById(R.id.button2)
+    fun updateList(newList: List<PhotoModel>) {
+        val diffResult = DiffUtil.calculateDiff(PhotoDiffCallback(photoList, newList))
+        photoList.clear()
+        photoList.addAll(newList)
+        diffResult.dispatchUpdatesTo(this)
+    }
+
+    private class PhotoDiffCallback(
+        private val oldList: List<PhotoModel>,
+        private val newList: List<PhotoModel>
+    ) : DiffUtil.Callback() {
+
+        override fun getOldListSize(): Int = oldList.size
+        override fun getNewListSize(): Int = newList.size
+
+        override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+            return oldList[oldItemPosition].imageUrl == newList[newItemPosition].imageUrl
+        }
+
+        override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+            return oldList[oldItemPosition] == newList[newItemPosition]
+        }
     }
 }
