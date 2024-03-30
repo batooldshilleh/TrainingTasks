@@ -8,6 +8,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.View
 import android.widget.Toast
@@ -39,8 +40,9 @@ class RecyclerViewListsActivity : AppCompatActivity() {
     private lateinit var cameraExecutor: ExecutorService
     private var imageCapture: ImageCapture? = null
 
-
     private val _IMAGE_REQUEST = 1
+    private val _PERMISSION_REQUEST = 101
+    private var permissionDeniedCount = 0
 
     private val activityResultLauncher =
         registerForActivityResult(
@@ -48,15 +50,15 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         ) { permissions ->
             val permissionGranted = permissions.all { it.value }
             if (!permissionGranted) {
-                Toast.makeText(
-                    baseContext,
-                    R.string.permission_error,
-                    Toast.LENGTH_SHORT
-                ).show()
+                permissionDeniedCount++
+                if (permissionDeniedCount >= 2) {
+                    showPermissionDialog()
+                }
             } else {
                 startCamera()
             }
         }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -68,13 +70,9 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         setupOnClickListener()
 
         cameraExecutor = Executors.newSingleThreadExecutor()
-
-
-
     }
 
-
-    private fun initializeRecyclerView(){
+    private fun initializeRecyclerView() {
         photoAdapter = PhotoAdapter(photoList, ::onDeleteClickFun)
 
         binding.rvImages.apply {
@@ -83,7 +81,7 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupOnClickListener(){
+    private fun setupOnClickListener() {
         binding.btnNewImage.setOnClickListener {
             binding.etImageName.text.toString().trim()
             showChooseImageSourceDialog()
@@ -92,18 +90,14 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         binding.btnCapture.setOnClickListener {
             captureImage()
         }
-
     }
-
 
     private fun startCamera() {
-
         setupVisibilityCameraStart()
         cameraProviderFutureListener()
-
     }
 
-    private fun setupVisibilityCameraStart(){
+    private fun setupVisibilityCameraStart() {
         binding.viewFinder.visibility = View.VISIBLE
         binding.btnCapture.visibility = View.VISIBLE
         binding.btnNewImage.visibility = View.GONE
@@ -111,7 +105,7 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         binding.rvImages.visibility = View.GONE
     }
 
-    private fun cameraProviderFutureListener(){
+    private fun cameraProviderFutureListener() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
         cameraProviderFuture.addListener({
             val cameraProvider = cameraProviderFuture.get()
@@ -137,16 +131,6 @@ class RecyclerViewListsActivity : AppCompatActivity() {
             baseContext, it
         ) == PackageManager.PERMISSION_GRANTED
     }
-
-    private fun arePermissionsDenied(): Boolean {
-        return REQUIRED_PERMISSIONS.any {
-            ContextCompat.checkSelfPermission(
-                baseContext, it
-            ) == PackageManager.PERMISSION_DENIED
-        }
-    }
-
-
 
     override fun onDestroy() {
         super.onDestroy()
@@ -218,7 +202,6 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         binding.etImageName.text.clear()
     }
 
-
     private fun captureImage() {
         val imageCapture = imageCapture ?: return
 
@@ -237,7 +220,6 @@ class RecyclerViewListsActivity : AppCompatActivity() {
             ContextCompat.getMainExecutor(this),
             object : ImageCapture.OnImageSavedCallback {
                 override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
-
                     val savedUri = Uri.fromFile(photoFile)
                     val name = binding.etImageName.text.toString()
                     addPhoto(name, savedUri.toString())
@@ -250,8 +232,7 @@ class RecyclerViewListsActivity : AppCompatActivity() {
             })
     }
 
-
-    private fun setupVisibilityCloasCamera(){
+    private fun setupVisibilityCloasCamera() {
         binding.viewFinder.visibility = View.GONE
         binding.btnCapture.visibility = View.GONE
         binding.rvImages.visibility = View.VISIBLE
@@ -259,6 +240,23 @@ class RecyclerViewListsActivity : AppCompatActivity() {
         binding.btnNewImage.visibility = View.VISIBLE
         binding.rvImages.visibility = View.VISIBLE
     }
+
+    private fun showPermissionDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(R.string.permission_dialog_title)
+        builder.setMessage(R.string.permission_dialog_message)
+        builder.setPositiveButton(R.string.settings) { _, _ ->
+            val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+            val uri: Uri = Uri.fromParts("package", packageName, null)
+            intent.data = uri
+            startActivityForResult(intent, _PERMISSION_REQUEST)
+        }
+        builder.setNegativeButton(R.string.cancel) { dialog, _ ->
+            dialog.dismiss()
+        }
+        builder.show()
+    }
+
     companion object {
         private const val TAG = "CameraXApp"
         private val REQUIRED_PERMISSIONS =
@@ -271,7 +269,4 @@ class RecyclerViewListsActivity : AppCompatActivity() {
                 }
             }.toTypedArray()
     }
-
-
-
 }
