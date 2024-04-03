@@ -1,4 +1,4 @@
-package com.example.tasks
+package com.example.tasks.linearCalcculater
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,10 +6,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.tasks.linearCalcculaterNav.Navigation
+import com.example.tasks.R
 
 class LinearLayout : AppCompatActivity(), View.OnClickListener {
 

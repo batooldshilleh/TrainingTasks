@@ -1,12 +1,11 @@
-package com.example.tasks
+package com.example.tasks.fragmintSimple
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentContainerView
+import com.example.tasks.R
 
 class FragmentSimpleTask : AppCompatActivity() {
     private lateinit var btnFirstFragment: Button

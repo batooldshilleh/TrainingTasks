@@ -1,4 +1,4 @@
-package com.example.tasks
+package com.example.tasks.login
 
 import android.content.Context
 import android.content.Intent
@@ -7,11 +7,11 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
+import com.example.tasks.loginPassword.ForgeatPassword
+import com.example.tasks.loginHome.Home
+import com.example.tasks.R
 import com.google.android.material.button.MaterialButton
 
 class Login : AppCompatActivity() {

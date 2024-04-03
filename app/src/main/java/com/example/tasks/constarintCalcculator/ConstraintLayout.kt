@@ -1,4 +1,4 @@
-package com.example.tasks
+package com.example.tasks.constarintCalcculator
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,10 +7,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.tasks.constractCalcculatorNav.NavigationConstarint
+import com.example.tasks.R
 
 class ConstraintLayout : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnAdd: Button

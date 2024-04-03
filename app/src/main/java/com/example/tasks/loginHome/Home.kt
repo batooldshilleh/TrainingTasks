@@ -1,12 +1,11 @@
-package com.example.tasks
+package com.example.tasks.loginHome
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.tasks.MainActivity
+import com.example.tasks.R
 
 class Home : AppCompatActivity() {
     private lateinit var typeTextView: TextView
