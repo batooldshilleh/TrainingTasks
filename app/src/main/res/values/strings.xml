@@ -6,6 +6,7 @@
     <string name="task3">Login app</string>
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
+    <string name="task9">Compose</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
@@ -47,5 +48,11 @@
     <string name="userTypeError">User type mismatch</string>
     <string name="emailPasswordError">Invalid email or password or chick type</string>
     <string name="invalidEmailFormat">Invalid email format</string>
+    <string name="title_activity_compose_first_app">ComposeFirstApp</string>
+    <string name="title_activity_first_compose_app">FirstComposeApp</string>
+    <string name="title_activity_state_hoisting_app">StateHoistingApp</string>
 
+    <!--compose-->
+    <string name="show_less">Show less</string>
+    <string name="show_more">Show more</string>
 </resources>

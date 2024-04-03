@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var btnLogin: Button
 
-
+    private lateinit var btnCompos: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin = findViewById(R.id.btnTask3)
 
-
+        btnCompos = findViewById(R.id.btnTask9)
 
 
     }
@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
 
         btnConstraintLayout.setOnClickListener {
             navigate("com.example.tasks.constrainlayout.ConstraintLayout")
+        }
+
+        btnCompos.setOnClickListener {
+            navigate("com.example.tasks.composeFirstApp.FirstComposeApp")
         }
 
     }
