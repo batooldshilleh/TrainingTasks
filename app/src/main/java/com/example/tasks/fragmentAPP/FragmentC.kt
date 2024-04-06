@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import com.example.tasks.fragmentAPP.setSafeOnClickListener
+import com.example.tasks.fragmentAPP.showArgument
 
 
 class FragmentC : Fragment(R.layout.fragment_c) {

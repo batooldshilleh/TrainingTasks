@@ -1,13 +1,13 @@
-package com.example.tasks
+package com.example.tasks.constractCalcculatorNav
 
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentContainerView
+import com.example.tasks.FragmentA
+import com.example.tasks.R
 
 class FragmantApp : AppCompatActivity() {
     private lateinit var btnNextActivity: Button

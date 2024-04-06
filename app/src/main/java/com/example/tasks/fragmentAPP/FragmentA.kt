@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.tasks.fragmentAPP.navigateToFragment
+import com.example.tasks.fragmentAPP.setSafeOnClickListener
+import com.example.tasks.fragmentAPP.showArgument
 
 
 class FragmentA : Fragment(R.layout.fragment_a) {

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnLinearLayout: Button
@@ -36,29 +37,20 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+  fun  setupListener(){
         btnLinearLayout.setOnClickListener {
             navigate("com.example.tasks.linearlayout.LinearLayout")
         }
 
         btnFragment.setOnClickListener {
+            navigate("com.example.tasks.linearlayout.LinearLayout")
 
-            navigateToFourthTask()
         }
 
         btnLogin.setOnClickListener {
-            navigateToThirdTask()
+            navigate("com.example.tasks.linearlayout.Login")
         }
 
-        btnConstraintLayout.setOnClickListener {
-            navigateToSecondTask()
-
-            navigate("com.example.tasks.fragmentapp.FragmentSimpleTask")
-        }
-
-        btnLogin.setOnClickListener {
-            navigate("com.example.tasks.login.Login")
-        }
 
         btnConstraintLayout.setOnClickListener {
             navigate("com.example.tasks.constrainlayout.ConstraintLayout")
@@ -68,8 +60,6 @@ class MainActivity : AppCompatActivity() {
 
   
 }
-
-    }
 
 
     fun navigate(className: String) {
