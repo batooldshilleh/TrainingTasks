@@ -8,6 +8,7 @@
     <string name="task5">Fragment task</string>
     <string name="task7">Onboarding Screen</string>
     <string name="task10">Dependency Ingection</string>
+    <string name="task11">Live Data</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
