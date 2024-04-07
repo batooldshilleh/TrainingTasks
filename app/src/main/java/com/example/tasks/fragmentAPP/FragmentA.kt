@@ -1,16 +1,12 @@
-package com.example.tasks
+package com.example.tasks.fragmentAPP
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.example.tasks.fragmentAPP.navigateToFragment
-import com.example.tasks.fragmentAPP.setSafeOnClickListener
-import com.example.tasks.fragmentAPP.showArgument
+import com.example.tasks.R
 
 
 class FragmentA : Fragment(R.layout.fragment_a) {

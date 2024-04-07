@@ -1,4 +1,4 @@
-package com.example.tasks.constractCalcculatorNav
+package com.example.tasks.fragmentAPP
 
 import android.os.Bundle
 import android.widget.Button
@@ -6,7 +6,6 @@ import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentContainerView
-import com.example.tasks.FragmentA
 import com.example.tasks.R
 
 class FragmantApp : AppCompatActivity() {

@@ -6,6 +6,7 @@
     <string name="task3">Login app</string>
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
+    <string name="task10">DI</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
@@ -51,4 +52,10 @@
     <string name="userTypeError">User type mismatch</string>
     <string name="emailPasswordError">Invalid email or password or chick type</string>
     <string name="invalidEmailFormat">Invalid email format</string>
+
+    <!--fragment simple-->
+    <string name="first_fragment">Fragment 1</string>
+    <string name="second_fragment">Fragment 2</string>
+    <string name="first_fragment_message">thar is a first fragment</string>
+    <string name="second_fragment_message">thar is a second fragment</string>
 </resources>
