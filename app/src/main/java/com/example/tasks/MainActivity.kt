@@ -66,10 +66,12 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.naveComponent.NavigationComponantApp")
         }
 
+
         btnOnboarding.setOnClickListener {
             navigate("com.example.tasks.splash.Onbording")
         }
-    }
+
+
 
       btnFragmentApp.setOnClickListener {
           navigate("com.example.tasks.fragmentAPP.FragmantApp")

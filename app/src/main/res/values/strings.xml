@@ -72,12 +72,10 @@
     <string name="second_splash_descreption">Welcome to Kotlin! This language offers concise syntax and powerful features for modern application development. Let\'s dive in and explore its potential together! </string>
     <string name="theard_splash_title">Android View</string>
     <string name="theard_splash_descreption">Welcome to Android XML! It\'s your toolkit for crafting intuitive app interfaces. Let\'s dive in and design! </string>
-    <string name="next">Next</string>
     <string name="end">Finish</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="welcom">Hi </string>
-
 
 
     <!--fragment simple-->
