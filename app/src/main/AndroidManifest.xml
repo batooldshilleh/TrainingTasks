@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCarApp"
         tools:targetApi="31">
-
+        <activity
+            android:name=".dependencyingection.DependencyIngectionActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
         <activity
             android:name=".constractCalcculatorNav.NavigationConstarint"
             android:exported="false" />
@@ -26,29 +29,20 @@
             android:name=".linearCalcculater.LinearLayout"
             android:exported="false" />
         <activity
-
             android:name=".naveComponent.NavigationComponantApp"
             android:exported="false" />
-
         <activity
             android:name=".bottombar.bottomBar"
             android:exported="false" />
-
-
-            android:name=".login.Login"
-            android:exported="false" />
-
         <activity
             android:name=".fragmintSimple.FragmentSimpleTask"
             android:exported="false" />
-
-        <activity android:name=".fragmentAPP.FragmantApp"
-            android:exported="false"/>
-
+        <activity
+            android:name=".fragmentAPP.FragmantApp"
+            android:exported="false" />
         <activity
             android:name=".splash.Onbording"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

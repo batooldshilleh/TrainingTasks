@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnNavigationComponant: Button
     private lateinit var btnOnboarding: Button
     private lateinit var btnFragmentApp: Button
-
+    private lateinit var btnDependencyIngection: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         btnNavigationComponant = findViewById(R.id.btnTask6)
         btnOnboarding = findViewById(R.id.btnTask7)
         btnFragmentApp = findViewById(R.id.btnTask5)
+        btnDependencyIngection = findViewById(R.id.btnTask10)
     }
 
 
@@ -77,6 +78,9 @@ class MainActivity : AppCompatActivity() {
           navigate("com.example.tasks.fragmentAPP.FragmantApp")
       }
 
+      btnDependencyIngection.setOnClickListener {
+          navigate("com.example.tasks.dependencyingection.DependencyIngectionActivity")
+      }
 
   
 }

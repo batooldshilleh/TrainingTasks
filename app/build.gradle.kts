@@ -56,5 +56,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation ("com.google.dagger:dagger:2.51")
+    kapt ("com.google.dagger:dagger-compiler:2.51")
+    implementation ("com.google.dagger:dagger:2.40.5")
+    annotationProcessor ("com.google.dagger:dagger-compiler:2.40.5")
 
 }
