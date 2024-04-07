@@ -7,8 +7,7 @@
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
     <string name="task7">Onboarding Screen</string>
-
-
+    <string name="task10">Dependency Ingection</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
@@ -83,5 +82,12 @@
     <string name="second_fragment">Fragment 2</string>
     <string name="first_fragment_message">thar is a first fragment</string>
     <string name="second_fragment_message">thar is a second fragment</string>
+
+    <!--DI-->
+
+    <string name="show">Show</string>
+    <string name="first_message">Welcome, Name</string>
+    <string name="welcome_message">Welcome, %s!</string>
+
 </resources>
 
