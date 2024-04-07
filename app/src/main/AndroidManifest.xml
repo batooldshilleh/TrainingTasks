@@ -46,6 +46,10 @@
             android:exported="false"/>
 
         <activity
+            android:name=".splash.Onbording"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
