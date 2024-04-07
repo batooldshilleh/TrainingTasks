@@ -7,6 +7,7 @@
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
     <string name="task7">Onboarding Screen</string>
+    <string name="task9">Compose First App</string>
     <string name="task10">Dependency Ingection</string>
     <string name="task11">Live Data</string>
 
@@ -89,6 +90,12 @@
     <string name="show">Show</string>
     <string name="first_message">Welcome, Name</string>
     <string name="welcome_message">Welcome, %s!</string>
+    <string name="title_activity_first_compose_app">FirstComposeApp</string>
+
+
+    <!--compose-->
+    <string name="show_less">Show less</string>
+    <string name="show_more">Show more</string>
 
 </resources>
 
