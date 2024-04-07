@@ -12,7 +12,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnFragment: Button
     private lateinit var btnConstraintLayout: Button
     private lateinit var btnLogin: Button
+    private lateinit var btnNavigationComponant: Button
     private lateinit var btnFragmentApp: Button
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +33,12 @@ class MainActivity : AppCompatActivity() {
         btnFragment = findViewById(R.id.btnTask4)
         btnConstraintLayout = findViewById(R.id.btnTask2)
         btnLogin = findViewById(R.id.btnTask3)
+
+
+        btnNavigationComponant = findViewById(R.id.btnTask6)
+
         btnFragmentApp = findViewById(R.id.btnTask5)
+
 
 
     }
@@ -56,6 +63,12 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.constarintCalcculator.ConstraintLayout")
 
         }
+
+
+        btnNavigationComponant.setOnClickListener {
+            navigate("com.example.tasks.naveComponent.NavigationComponantApp")
+        }
+    }
 
       btnFragmentApp.setOnClickListener {
           navigate("com.example.tasks.fragmentAPP.FragmantApp")

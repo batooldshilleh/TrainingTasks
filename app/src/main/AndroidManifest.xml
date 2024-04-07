@@ -26,6 +26,15 @@
             android:name=".linearCalcculater.LinearLayout"
             android:exported="false" />
         <activity
+
+            android:name=".naveComponent.NavigationComponantApp"
+            android:exported="false" />
+
+        <activity
+            android:name=".bottombar.bottomBar"
+            android:exported="false" />
+
+
             android:name=".login.Login"
             android:exported="false" />
 
@@ -35,6 +44,7 @@
 
         <activity android:name=".fragmentAPP.FragmantApp"
             android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
