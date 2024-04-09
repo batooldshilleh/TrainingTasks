@@ -85,5 +85,7 @@ dependencies {
     implementation ("com.google.dagger:dagger:2.40.5")
     annotationProcessor ("com.google.dagger:dagger-compiler:2.40.5")
 
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+
 
 }

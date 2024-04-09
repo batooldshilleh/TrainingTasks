@@ -12,7 +12,7 @@
     <string name="task11">Live Data</string>
     <string name="task12">Real World Design</string>
     <string name="task13">Basic State Compose</string>
-
+    <string name="task14">Coroutins</string>
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
     <string name="enterA">Enter first number</string>

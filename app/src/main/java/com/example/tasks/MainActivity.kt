@@ -74,6 +74,9 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.codLabState.ComposeStateActivity")
         }
 
+        binding.btnTask14.setOnClickListener {
+            navigate("com.example.tasks.coroutine.CoroutineActivity")
+        }
     }
 
 
