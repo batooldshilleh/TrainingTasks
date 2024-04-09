@@ -70,6 +70,10 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.composLab.RealWorldDesign")
         }
 
+        binding.btnTask13.setOnClickListener {
+            navigate("com.example.tasks.codLabState.ComposeStateActivity")
+        }
+
     }
 
 

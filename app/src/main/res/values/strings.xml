@@ -11,6 +11,7 @@
     <string name="task10">Dependency Ingection</string>
     <string name="task11">Live Data</string>
     <string name="task12">Real World Design</string>
+    <string name="task13">Basic State Compose</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
@@ -118,6 +119,13 @@
     <string name="bottom_navigation_home">Home</string>
     <string name="bottom_navigation_profile">Profile</string>
     <string name="placeholder_search">Search</string>
+    <string name="title_activity_compose_state">ComposeStateActivity</string>
+    <string name="title_activity_water_counter">WaterCounter</string>
+    <string name="title_activity_wellness_screen">WellnessScreen</string>
+    <string name="title_activity_wellness_task_item">WellnessTaskItem</string>
+    <string name="title_activity_wellness_tasks_list">WellnessTasksList</string>
+    <string name="title_activity_wellness_task">WellnessTask</string>
+    <string name="title_activity_wellness_view_model">WellnessViewModel</string>
 
 </resources>
 
