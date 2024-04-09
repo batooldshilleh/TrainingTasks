@@ -16,5 +16,10 @@
         <item name="android:windowBackground">@color/white</item>
     </style>
 
+    <style name="Theme.MySoothe" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:statusBarColor">@color/darkBlue</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>

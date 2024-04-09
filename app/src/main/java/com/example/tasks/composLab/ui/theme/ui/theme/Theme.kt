@@ -1,10 +1,9 @@
-package com.example.tasks.composLab.ui.theme
+package com.example.tasks.composLab.ui.theme.ui.theme
 
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Shapes
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
@@ -15,7 +14,6 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
-import com.example.tasks.composLab.ui.theme.ui.theme.shapes
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -38,8 +36,6 @@ private val LightColorScheme = lightColorScheme(
     onSurface = Color(0xFF1C1B1F),
     */
 )
-
-
 
 @Composable
 fun TasksTheme(
@@ -69,26 +65,6 @@ fun TasksTheme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
-        content = content
-    )
-}
-
-
-@Composable
-fun MySootheTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable() () -> Unit
-) {
-    val colors = if (darkTheme) {
-        DarkColorScheme
-    } else {
-        LightColorScheme
-    }
-
-    MaterialTheme(
-        colorScheme = colors,
-        typography = Typography,
-        shapes = shapes,
         content = content
     )
 }

@@ -62,7 +62,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -71,10 +71,10 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.camera.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation ("androidx.compose.material:material-icons-extended:1.6.5")
     implementation ("com.google.dagger:dagger:2.51")
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
@@ -83,6 +83,6 @@ dependencies {
     kapt ("com.google.dagger:dagger-compiler:2.51")
     implementation ("com.google.dagger:dagger:2.40.5")
     annotationProcessor ("com.google.dagger:dagger-compiler:2.40.5")
-    implementation ("androidx.compose.material:material-icons-extended:1.6.5")
+
 
 }

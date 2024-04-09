@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
         setupListener()
@@ -64,6 +64,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnTask11.setOnClickListener {
             navigate("com.example.tasks.liveData.LiveDataActivity")
+        }
+
+        binding.btnTask12.setOnClickListener {
+            navigate("com.example.tasks.composLab.RealWorldDesign")
         }
 
     }
