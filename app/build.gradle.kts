@@ -86,6 +86,14 @@ dependencies {
     annotationProcessor ("com.google.dagger:dagger-compiler:2.40.5")
 
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    val camerax_version ="1.3.2"
+    implementation ("androidx.camera:camera-core:${camerax_version}")
+    implementation ("androidx.camera:camera-camera2:${camerax_version}")
+    implementation( "androidx.camera:camera-lifecycle:${camerax_version}")
+    implementation ("androidx.camera:camera-video:${camerax_version}")
 
-
+    implementation ("androidx.camera:camera-view:${camerax_version}")
+    implementation ("androidx.camera:camera-extensions:${camerax_version}")
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
 }

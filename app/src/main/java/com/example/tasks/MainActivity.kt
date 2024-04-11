@@ -54,6 +54,10 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.splash.Onbording")
         }
 
+        binding.btnTask8.setOnClickListener {
+            navigate("com.example.tasks.recyclerView.RecyclerViewListsActivity")
+        }
+
         binding.btnTask9.setOnClickListener {
             navigate("com.example.tasks.composLab.FirstComposeApp")
         }
@@ -76,6 +80,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnTask14.setOnClickListener {
             navigate("com.example.tasks.coroutine.CoroutineActivity")
+        }
+        binding.btnTask15.setOnClickListener {
+            navigate("com.example.tasks.fibCoroutins.FibActivity")
         }
     }
 
