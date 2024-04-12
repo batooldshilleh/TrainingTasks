@@ -84,6 +84,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnTask15.setOnClickListener {
             navigate("com.example.tasks.fibCoroutins.FibActivity")
         }
+
+        binding.btnTask16.setOnClickListener {
+            navigate("com.example.tasks.roomDB.ToDoAppCom")
+        }
     }
 
 

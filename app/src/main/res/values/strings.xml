@@ -14,6 +14,7 @@
     <string name="task12">Real World Design</string>
     <string name="task13">Basic State Compose</string>
     <string name="task14">Coroutins</string>
+    <string name="task16">Room</string>
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
     <string name="enterA">Enter first number</string>
@@ -143,6 +144,7 @@
     <string name="permission_dialog_message">To make app run well you must allow the permissions</string>
     <string name="settings">settings</string>
     <string name="cancel">Cancel</string>
+    <string name="title_activity_to_do_app_com">ToDoAppCom</string>
 
 </resources>
 

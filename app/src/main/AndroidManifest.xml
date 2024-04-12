@@ -22,11 +22,14 @@
         android:theme="@style/Theme.MyCarApp"
         tools:targetApi="31">
         <activity
+            android:name=".roomDB.ToDoAppCom"
+            android:exported="false"
+            android:label="@string/title_activity_to_do_app_com"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
             android:name=".recyclerView.RecyclerViewListsActivity"
             android:exported="false" />
-        <activity
-            android:name=".asyncAndAwait.AsyncAndAwaitActivity"
-            android:exported="false" />
+
         <activity
             android:name=".fibCoroutins.FibActivity"
             android:exported="false" />
