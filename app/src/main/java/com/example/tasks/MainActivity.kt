@@ -6,84 +6,78 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
+import com.example.tasks.databinding.ActivityLiveDataBinding
+import com.example.tasks.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var btnLinearLayout: Button
-    private lateinit var btnFragment: Button
-    private lateinit var btnConstraintLayout: Button
-    private lateinit var btnLogin: Button
-    private lateinit var btnNavigationComponant: Button
-    private lateinit var btnOnboarding: Button
-    private lateinit var btnFragmentApp: Button
-    private lateinit var btnDependencyIngection: Button
-
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        setupView()
+
         setupListener()
     }
 
 
-
-    fun setupView() {
-
-        btnLinearLayout = findViewById(R.id.btnTask1)
-        btnFragment = findViewById(R.id.btnTask4)
-        btnConstraintLayout = findViewById(R.id.btnTask2)
-        btnLogin = findViewById(R.id.btnTask3)
-        btnNavigationComponant = findViewById(R.id.btnTask6)
-        btnOnboarding = findViewById(R.id.btnTask7)
-        btnFragmentApp = findViewById(R.id.btnTask5)
-        btnDependencyIngection = findViewById(R.id.btnTask10)
-    }
-
-
-  fun  setupListener(){
-        btnLinearLayout.setOnClickListener {
+    fun setupListener() {
+        binding.btnTask1.setOnClickListener {
             navigate("com.example.tasks.linearCalcculater.LinearLayout")
         }
 
-        btnFragment.setOnClickListener {
-            navigate("com.example.tasks.fragmintSimple.FragmentSimpleTask")
-
-        }
-
-        btnLogin.setOnClickListener {
-            navigate("com.example.tasks.login.Login")
-        }
-
-
-        btnConstraintLayout.setOnClickListener {
+        binding.btnTask2.setOnClickListener {
             navigate("com.example.tasks.constarintCalcculator.ConstraintLayout")
 
         }
 
+        binding.btnTask3.setOnClickListener {
+            navigate("com.example.tasks.login.Login")
+        }
 
-        btnNavigationComponant.setOnClickListener {
+        binding.btnTask4.setOnClickListener {
+            navigate("com.example.tasks.fragmintSimple.FragmentSimpleTask")
+
+        }
+
+        binding.btnTask5.setOnClickListener {
+            navigate("com.example.tasks.fragmentAPP.FragmantApp")
+        }
+
+        binding.btnTask6.setOnClickListener {
             navigate("com.example.tasks.naveComponent.NavigationComponantApp")
         }
 
 
-        btnOnboarding.setOnClickListener {
+        binding.btnTask7.setOnClickListener {
             navigate("com.example.tasks.splash.Onbording")
         }
 
+        binding.btnTask9.setOnClickListener {
+            navigate("com.example.tasks.composLab.FirstComposeApp")
+        }
 
+        binding.btnTask10.setOnClickListener {
+            navigate("com.example.tasks.dependencyingection.DependencyIngectionActivity")
+        }
 
-      btnFragmentApp.setOnClickListener {
-          navigate("com.example.tasks.fragmentAPP.FragmantApp")
-      }
+        binding.btnTask11.setOnClickListener {
+            navigate("com.example.tasks.liveData.LiveDataActivity")
+        }
 
-      btnDependencyIngection.setOnClickListener {
-          navigate("com.example.tasks.dependencyingection.DependencyIngectionActivity")
-      }
+        binding.btnTask12.setOnClickListener {
+            navigate("com.example.tasks.composLab.RealWorldDesign")
+        }
 
-  
-}
+        binding.btnTask13.setOnClickListener {
+            navigate("com.example.tasks.codLabState.ComposeStateActivity")
+        }
+
+        binding.btnTask14.setOnClickListener {
+            navigate("com.example.tasks.coroutine.CoroutineActivity")
+        }
+    }
 
 
     fun navigate(className: String) {

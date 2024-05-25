@@ -13,9 +13,61 @@
         android:theme="@style/Theme.MyCarApp"
         tools:targetApi="31">
         <activity
-            android:name=".dependencyingection.DependencyIngectionActivity"
-            android:windowSoftInputMode="adjustResize"
+            android:name=".coroutine.CoroutineActivity"
             android:exported="false" />
+        <activity
+            android:name=".codLabState.WellnessViewModel"
+            android:exported="false"
+            android:label="@string/title_activity_wellness_view_model"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".codLabState.WellnessTask"
+            android:exported="false"
+            android:label="@string/title_activity_wellness_task"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".codLabState.WellnessTasksList"
+            android:exported="false"
+            android:label="@string/title_activity_wellness_tasks_list"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".codLabState.WellnessTaskItem"
+            android:exported="false"
+            android:label="@string/title_activity_wellness_task_item"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".codLabState.WellnessScreen"
+            android:exported="false"
+            android:label="@string/title_activity_wellness_screen"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".codLabState.WaterCounter"
+            android:exported="false"
+            android:label="@string/title_activity_water_counter"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".codLabState.ComposeStateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose_state"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".composLab.RealWorldDesign"
+            android:exported="false"
+            android:label="@string/title_activity_real_world_design"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".composLab.FirstComposeApp"
+            android:exported="false"
+            android:label="@string/title_activity_first_compose_app"
+            android:theme="@style/Theme.MyCarApp" />
+        <activity
+            android:name=".liveData.LiveDataActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".dependencyingection.DependencyIngectionActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".constractCalcculatorNav.NavigationConstarint"
             android:exported="false" />

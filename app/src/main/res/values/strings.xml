@@ -7,8 +7,12 @@
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
     <string name="task7">Onboarding Screen</string>
+    <string name="task9">Compose First App</string>
     <string name="task10">Dependency Ingection</string>
-
+    <string name="task11">Live Data</string>
+    <string name="task12">Real World Design</string>
+    <string name="task13">Basic State Compose</string>
+    <string name="task14">Coroutins</string>
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
     <string name="enterA">Enter first number</string>
@@ -88,6 +92,40 @@
     <string name="show">Show</string>
     <string name="first_message">Welcome, Name</string>
     <string name="welcome_message">Welcome, %s!</string>
+    <string name="title_activity_first_compose_app">FirstComposeApp</string>
+
+
+    <!--compose-->
+    <string name="show_less">Show less</string>
+    <string name="show_more">Show more</string>
+    <string name="title_activity_real_world_design">RealWorldDesign</string>
+
+    <!--compose layout-->
+    <string name="favorite_collections">Favorite Collections</string>
+    <string name="align_your_body">Align your Body</string>
+    <string name="ab1_inversions">Inversions</string>
+    <string name="ab2_quick_yoga">Quick yoga</string>
+    <string name="ab3_stretching">Stretching</string>
+    <string name="ab4_tabata">Tabata</string>
+    <string name="ab5_hiit">HIIT</string>
+    <string name="ab6_pre_natal_yoga">Pre-natal yoga</string>
+    <string name="fc1_short_mantras">Short mantras</string>
+    <string name="fc2_nature_meditations">Nature meditations</string>
+    <string name="fc3_stress_and_anxiety">Stress and anxiety</string>
+    <string name="fc4_self_massage">Self massage</string>
+    <string name="fc5_overwhelmed">Overwhelmed</string>
+    <string name="fc6_nightly_wind_down">Nightly wind down</string>
+    <string name="cd_fab_start">start</string>
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_profile">Profile</string>
+    <string name="placeholder_search">Search</string>
+    <string name="title_activity_compose_state">ComposeStateActivity</string>
+    <string name="title_activity_water_counter">WaterCounter</string>
+    <string name="title_activity_wellness_screen">WellnessScreen</string>
+    <string name="title_activity_wellness_task_item">WellnessTaskItem</string>
+    <string name="title_activity_wellness_tasks_list">WellnessTasksList</string>
+    <string name="title_activity_wellness_task">WellnessTask</string>
+    <string name="title_activity_wellness_view_model">WellnessViewModel</string>
 
 </resources>
 
