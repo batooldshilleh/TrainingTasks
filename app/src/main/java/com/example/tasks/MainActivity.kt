@@ -5,70 +5,82 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.content.ContextCompat.startActivity
+import com.example.tasks.databinding.ActivityLiveDataBinding
+import com.example.tasks.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var btnLinearLayout: Button
-
-    private lateinit var btnFragment: Button
-
-    private lateinit var btnConstraintLayout: Button
-
-    private lateinit var btnLogin: Button
-
-    private lateinit var btnRecyclerView: Button
-
-
+    private lateinit var binding: ActivityMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        setupView()
+
         setupListener()
-
     }
 
-    fun setupView() {
-        btnLinearLayout = findViewById(R.id.btnTask1)
-
-
-        btnFragment = findViewById(R.id.btnTask4)
-
-        btnConstraintLayout = findViewById(R.id.btnTask2)
-
-        btnLogin = findViewById(R.id.btnTask3)
-
-
-        btnRecyclerView = findViewById(R.id.btnTask8)
-
-    }
 
     fun setupListener() {
-        btnLinearLayout.setOnClickListener {
-            navigate("com.example.tasks.linearlayout.LinearLayout")
+        binding.btnTask1.setOnClickListener {
+            navigate("com.example.tasks.linearCalcculater.LinearLayout")
         }
 
-        btnFragment.setOnClickListener {
-            navigate("com.example.tasks.fragmentapp.FragmentSimpleTask")
+        binding.btnTask2.setOnClickListener {
+            navigate("com.example.tasks.constarintCalcculator.ConstraintLayout")
+
         }
 
-        btnLogin.setOnClickListener {
+        binding.btnTask3.setOnClickListener {
             navigate("com.example.tasks.login.Login")
         }
 
-        btnConstraintLayout.setOnClickListener {
-            navigate("com.example.tasks.constrainlayout.ConstraintLayout")
+        binding.btnTask4.setOnClickListener {
+            navigate("com.example.tasks.fragmintSimple.FragmentSimpleTask")
+
         }
 
-        btnRecyclerView.setOnClickListener {
-            navigate("com.example.tasks.recyclerViewHome.RecyclerViewListsActivity")
+        binding.btnTask5.setOnClickListener {
+            navigate("com.example.tasks.fragmentAPP.FragmantApp")
         }
 
+        binding.btnTask6.setOnClickListener {
+            navigate("com.example.tasks.naveComponent.NavigationComponantApp")
+        }
+
+
+        binding.btnTask7.setOnClickListener {
+            navigate("com.example.tasks.splash.Onbording")
+        }
+
+
+        binding.btnTask9.setOnClickListener {
+            navigate("com.example.tasks.composLab.FirstComposeApp")
+        }
+
+        binding.btnTask10.setOnClickListener {
+            navigate("com.example.tasks.dependencyingection.DependencyIngectionActivity")
+        }
+
+        binding.btnTask11.setOnClickListener {
+            navigate("com.example.tasks.liveData.LiveDataActivity")
+        }
+
+        binding.btnTask12.setOnClickListener {
+            navigate("com.example.tasks.composLab.RealWorldDesign")
+        }
+
+        binding.btnTask13.setOnClickListener {
+            navigate("com.example.tasks.codLabState.ComposeStateActivity")
+        }
+
+
+        binding.btnTask14.setOnClickListener {
+            navigate("com.example.tasks.coroutine.CoroutineActivity")
+        }
 
     }
 
@@ -84,3 +96,4 @@ class MainActivity : AppCompatActivity() {
 
 
 }
+

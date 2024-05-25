@@ -8,6 +8,14 @@
     <string name="task5">Fragment task</string>
     <string name="task8">Recycler View</string>
 
+    <string name="task7">Onboarding Screen</string>
+    <string name="task9">Compose First App</string>
+    <string name="task10">Dependency Ingection</string>
+    <string name="task11">Live Data</string>
+    <string name="task12">Real World Design</string>
+    <string name="task13">Basic State Compose</string>
+    <string name="task14">Coroutins</string>
+
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
     <string name="enterA">Enter first number</string>
@@ -20,12 +28,16 @@
     <string name="navigation">Navigation</string>
     <string name="back">Back</string>
 
-
-    <!--fragment simple-->
-    <string name="first_fragment">Fragment 1</string>
-    <string name="second_fragment">Fragment 2</string>
-    <string name="first_fragment_message">thar is a first fragment</string>
-    <string name="second_fragment_message">thar is a second fragment</string>
+    <!--fragment task-->
+    <string name="activity_button">Start</string>
+    <string name="name">Enter your name</string>
+    <string name="animal">Enter your favourite animal </string>
+    <string name="color">Enter your favourite color </string>
+    <string name="next">Next</string>
+    <string name="fragment_color">and your favorite color is</string>
+    <string name="fragment_animal">and your favorite animal is</string>
+    <string name="fragment_name">Hi </string>
+    <string name="frament_qustion">what is your favorite animal?</string>
 
     <!--login-->
     <string name="top_image">top_image</string>
@@ -49,6 +61,7 @@
     <string name="emailPasswordError">Invalid email or password or chick type</string>
     <string name="invalidEmailFormat">Invalid email format</string>
 
+
     <!--recyclerView-->
     <string name="name">Enter Photo Name</string>
     <string name="enter_image">add image</string>
@@ -68,3 +81,75 @@
     <string name="cancel">Cancel</string>
 
 </resources>
+
+
+    <!--Navigation Component-->
+    <string name="navigation_component">Navigation Component</string>
+    <string name="one_fragment">1</string>
+    <string name="two_fragment">2</string>
+    <string name="btn_nave">Next Activity</string>
+    <string name="fragment_d">Fragment D</string>
+    <string name="fragment_e">Fragment e</string>
+    <string name="fragment_f">Fragment f</string>
+
+    <!--onboarding-->
+    <string name="first_splash_title">Learn Android </string>
+    <string name="first_splash_descreption">Welcome to Android app development! This journey will equip you with the skills to create powerful, inspiring applications. Let\'s dive in and start building together! </string>
+    <string name="second_splash_title">Kotlin </string>
+    <string name="second_splash_descreption">Welcome to Kotlin! This language offers concise syntax and powerful features for modern application development. Let\'s dive in and explore its potential together! </string>
+    <string name="theard_splash_title">Android View</string>
+    <string name="theard_splash_descreption">Welcome to Android XML! It\'s your toolkit for crafting intuitive app interfaces. Let\'s dive in and design! </string>
+    <string name="end">Finish</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="welcom">Hi </string>
+
+
+    <!--fragment simple-->
+    <string name="first_fragment">Fragment 1</string>
+    <string name="second_fragment">Fragment 2</string>
+    <string name="first_fragment_message">thar is a first fragment</string>
+    <string name="second_fragment_message">thar is a second fragment</string>
+
+    <!--DI-->
+
+    <string name="show">Show</string>
+    <string name="first_message">Welcome, Name</string>
+    <string name="welcome_message">Welcome, %s!</string>
+    <string name="title_activity_first_compose_app">FirstComposeApp</string>
+
+
+    <!--compose-->
+    <string name="show_less">Show less</string>
+    <string name="show_more">Show more</string>
+    <string name="title_activity_real_world_design">RealWorldDesign</string>
+
+    <!--compose layout-->
+    <string name="favorite_collections">Favorite Collections</string>
+    <string name="align_your_body">Align your Body</string>
+    <string name="ab1_inversions">Inversions</string>
+    <string name="ab2_quick_yoga">Quick yoga</string>
+    <string name="ab3_stretching">Stretching</string>
+    <string name="ab4_tabata">Tabata</string>
+    <string name="ab5_hiit">HIIT</string>
+    <string name="ab6_pre_natal_yoga">Pre-natal yoga</string>
+    <string name="fc1_short_mantras">Short mantras</string>
+    <string name="fc2_nature_meditations">Nature meditations</string>
+    <string name="fc3_stress_and_anxiety">Stress and anxiety</string>
+    <string name="fc4_self_massage">Self massage</string>
+    <string name="fc5_overwhelmed">Overwhelmed</string>
+    <string name="fc6_nightly_wind_down">Nightly wind down</string>
+    <string name="cd_fab_start">start</string>
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_profile">Profile</string>
+    <string name="placeholder_search">Search</string>
+    <string name="title_activity_compose_state">ComposeStateActivity</string>
+    <string name="title_activity_water_counter">WaterCounter</string>
+    <string name="title_activity_wellness_screen">WellnessScreen</string>
+    <string name="title_activity_wellness_task_item">WellnessTaskItem</string>
+    <string name="title_activity_wellness_tasks_list">WellnessTasksList</string>
+    <string name="title_activity_wellness_task">WellnessTask</string>
+    <string name="title_activity_wellness_view_model">WellnessViewModel</string>
+
+</resources>
+
