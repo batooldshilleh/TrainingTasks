@@ -1,4 +1,4 @@
-package com.example.tasks.fragmentAPP
+package com.example.tasks.fragmints
 
 
 
@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.tasks.R
+
 
 fun Button.setSafeOnClickListener(onSafeClick: (View) -> Unit) {
     val safeClickListener = View.OnClickListener {

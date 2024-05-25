@@ -2,11 +2,7 @@ package com.example.tasks
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
-import com.example.tasks.databinding.ActivityLiveDataBinding
 import com.example.tasks.databinding.ActivityMainBinding
 
 
@@ -44,43 +40,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnTask5.setOnClickListener {
-            navigate("com.example.tasks.fragmentAPP.FragmantApp")
+            navigate("com.example.tasks.fragmints.FragmantApp")
         }
 
         binding.btnTask6.setOnClickListener {
-            navigate("com.example.tasks.naveComponent.NavigationComponantApp")
+            navigate("com.example.tasks.recyclerViewHome.RecyclerViewListsActivity")
         }
 
 
-        binding.btnTask7.setOnClickListener {
-            navigate("com.example.tasks.splash.Onbording")
-        }
 
-
-        binding.btnTask9.setOnClickListener {
-            navigate("com.example.tasks.composLab.FirstComposeApp")
-        }
-
-        binding.btnTask10.setOnClickListener {
-            navigate("com.example.tasks.dependencyingection.DependencyIngectionActivity")
-        }
-
-        binding.btnTask11.setOnClickListener {
-            navigate("com.example.tasks.liveData.LiveDataActivity")
-        }
-
-        binding.btnTask12.setOnClickListener {
-            navigate("com.example.tasks.composLab.RealWorldDesign")
-        }
-
-        binding.btnTask13.setOnClickListener {
-            navigate("com.example.tasks.codLabState.ComposeStateActivity")
-        }
-
-
-        binding.btnTask14.setOnClickListener {
-            navigate("com.example.tasks.coroutine.CoroutineActivity")
-        }
 
     }
 
@@ -89,11 +57,10 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this@MainActivity, Class.forName(className))
 
-            startActivity(intent)
+        startActivity(intent)
 
 
     }
 
 
 }
-
