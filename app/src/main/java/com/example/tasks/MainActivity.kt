@@ -9,8 +9,10 @@ import androidx.core.content.ContextCompat.startActivity
 import com.example.tasks.databinding.ActivityLiveDataBinding
 import com.example.tasks.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.splash.Onbording")
         }
 
+
         binding.btnTask9.setOnClickListener {
             navigate("com.example.tasks.composLab.FirstComposeApp")
         }
@@ -74,16 +77,20 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.codLabState.ComposeStateActivity")
         }
 
+
         binding.btnTask14.setOnClickListener {
             navigate("com.example.tasks.coroutine.CoroutineActivity")
         }
+
     }
 
 
-    fun navigate(className: String) {
+    fun navigate(className: String, requestCode: Int? = null) {
 
         val intent = Intent(this@MainActivity, Class.forName(className))
-        startActivity(intent)
+
+            startActivity(intent)
+
 
     }
 

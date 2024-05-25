@@ -6,6 +6,8 @@
     <string name="task3">Login app</string>
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
+    <string name="task8">Recycler View</string>
+
     <string name="task7">Onboarding Screen</string>
     <string name="task9">Compose First App</string>
     <string name="task10">Dependency Ingection</string>
@@ -13,6 +15,7 @@
     <string name="task12">Real World Design</string>
     <string name="task13">Basic State Compose</string>
     <string name="task14">Coroutins</string>
+
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
     <string name="enterA">Enter first number</string>
@@ -57,6 +60,27 @@
     <string name="userTypeError">User type mismatch</string>
     <string name="emailPasswordError">Invalid email or password or chick type</string>
     <string name="invalidEmailFormat">Invalid email format</string>
+
+
+    <!--recyclerView-->
+    <string name="name">Enter Photo Name</string>
+    <string name="enter_image">add image</string>
+    <string name="permission_error">Permission request denied</string>
+    <string name="camera_ex">Use case binding failed</string>
+    <string name="delete_title">Delete Item</string>
+    <string name="delete_Message">Are you sure you want to delete this image?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="camera_title">Choose Image Source</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="permission_dialog_title">Warning</string>
+    <string name="permission_dialog_message">To make app run well you must allow the permissions</string>
+    <string name="settings">settings</string>
+    <string name="cancel">Cancel</string>
+
+</resources>
 
 
     <!--Navigation Component-->

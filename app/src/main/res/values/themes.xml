@@ -8,6 +8,11 @@
 
     <style name="Theme.MyCarApp" parent="Base.Theme.MyCarApp" />
 
+
+    <style name="ShapeAppearanceOverlay.Circle" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
 
         <item name="colorPrimary">@color/parpel</item>
@@ -22,4 +27,5 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
 </resources>
