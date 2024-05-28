@@ -67,5 +67,14 @@
        app:layout_constraintEnd_toEndOf="@+id/btnTask3"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/btnTask5" />
+
+   <Button
+       android:id="@+id/btnTask8"
+       android:layout_width="0dp"
+       android:layout_height="56dp"
+       android:text="@string/task8"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="@id/btnTask4"
+       app:layout_constraintTop_toBottomOf="@+id/btnTask6" />
  
 </androidx.constraintlayout.widget.ConstraintLayout>

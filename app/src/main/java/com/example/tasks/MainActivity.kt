@@ -51,6 +51,9 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.naveComponent.NavigationComponantApp")
         }
 
+        binding.btnTask8.setOnClickListener {
+            navigate("com.example.tasks.splash.Onbording")
+        }
 
     }
 
