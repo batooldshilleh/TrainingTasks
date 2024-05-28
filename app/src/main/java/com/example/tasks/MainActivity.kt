@@ -47,7 +47,9 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.recyclerViewHome.RecyclerViewListsActivity")
         }
 
-
+        binding.btnTask7.setOnClickListener {
+            navigate("com.example.tasks.naveComponent.NavigationComponantApp")
+        }
 
 
     }

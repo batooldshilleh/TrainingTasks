@@ -7,6 +7,7 @@
     <string name="task4">Simple fragment app</string>
     <string name="task5">Fragment task</string>
     <string name="task6">RecyclerView</string>
+    <string name="task7">Navigation Component</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
@@ -75,4 +76,13 @@
     <string name="second_fragment">Fragment 2</string>
     <string name="first_fragment_message">thar is a first fragment</string>
     <string name="second_fragment_message">thar is a second fragment</string>
+
+    <!--Navigation Component-->
+    <string name="navigation_component">Navigation Component</string>
+    <string name="one_fragment">1</string>
+    <string name="two_fragment">2</string>
+    <string name="btn_nave">Next Activity</string>
+    <string name="fragment_d">Fragment D</string>
+    <string name="fragment_e">Fragment e</string>
+    <string name="fragment_f">Fragment f</string>
 </resources>
