@@ -59,6 +59,20 @@ This project is an implementation of the concepts of Layout,Fragmint, Navigation
   In this section, a name is entered and then printed with a welcome message.
 - **Dependency Injection**<br>
   In this section, dependency injection is implemented within the ViewModel and Repository.
+
+- **Coroutines:**
+  Concepts to understand Coroutines.
+
+- **Compose:**
+  - **First App:**
+    Simple app to understand and work with components.
+
+  - **Basic State:**
+    Understanding state and remember function.
+
+  - **Real World App:**
+    Integration of the above concepts and handling multiple window sizes.
+
   
 
 ## Installation
