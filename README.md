@@ -3,7 +3,7 @@
 
 ## Description
 
-This project is an implementation of the concepts of Room Database, Retrofit API, LiveData, and Dependency Injection.
+This project is an implementation of the concepts of Layout,Fragmint, Navigation Component, Compose, Coroutines, Recyclerview, CameraX, Glide, LiveData, and Dependency Injection.
 
 ## Screenshots
 
