@@ -58,7 +58,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnTask9.setOnClickListener {
             navigate("com.example.tasks.dependencyingection.DependencyIngectionActivity")
         }
-
+        binding.btnTask10.setOnClickListener {
+            navigate("com.example.tasks.liveData.LiveDataActivity")
+        }
     }
 
 

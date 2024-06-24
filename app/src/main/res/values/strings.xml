@@ -10,6 +10,7 @@
     <string name="task7">Navigation Component</string>
     <string name="task8">Onboarding</string>
     <string name="task9">DI</string>
+    <string name="task10">Live Data</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
