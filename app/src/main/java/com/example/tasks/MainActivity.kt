@@ -55,6 +55,10 @@ class MainActivity : AppCompatActivity() {
             navigate("com.example.tasks.splash.Onbording")
         }
 
+        binding.btnTask9.setOnClickListener {
+            navigate("com.example.tasks.dependencyingection.DependencyIngectionActivity")
+        }
+
     }
 
 

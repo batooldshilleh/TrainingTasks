@@ -9,6 +9,7 @@
     <string name="task6">RecyclerView</string>
     <string name="task7">Navigation Component</string>
     <string name="task8">Onboarding</string>
+    <string name="task9">DI</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>
@@ -99,4 +100,18 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="welcom">Hi </string>
+
+    <!--compose-->
+    <string name="show_less">Show less</string>
+    <string name="show_more">Show more</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <!--DI-->
+
+    <string name="show">Show</string>
+    <string name="first_message">Welcome, Name</string>
+    <string name="welcome_message">Welcome, %s!</string>
 </resources>
