@@ -26,24 +26,39 @@ This project is an implementation of the concepts of Layout,Fragmint, Navigation
 
 
 ## Features
-- Layout
-  - Linear Layout:
+- **Layout**
+  - **Linear Layout:**
     Simple calculater app with linear layout
-  - Constraint Layout:
+  - **Constraint Layout:**
     Simple calculater app with linear layout
-- Login App<br>
+- **Login App**<br>
  A simple login page to demonstrate navigation, Bundle, layout and to learn how to use matrial3.
-- Fragment
-  - Simple Fragmint App:
+- **Fragment**
+  - **Simple Fragmint App:**
     Simple app swich between tow fragmints
-  - Fragmint Task:
+  - **Fragmint Task:**
     Switch between fragments and send data from one to another.
-- LiveData <br>
+- **Navigation**
+  - **Navigation Component:**
+    Simple app to navigate between fragments and activities using buttons and menus.
+  - **Onbording:**
+    Splash screen and onboarding images with accompanying text.
+- **RecyclerView:**
+  Utilizes RecyclerView to display images with descriptions, with the capability to delete items.
+
+  - **Permissions:**
+    Requests user permission to add images from gallery or camera.
+
+  - **CameraX:**
+    Uses CameraX library to capture photos.
+
+  - **Glide:**
+    Utilizes Glide library to load images from the gallery.
+
+- **LiveData** <br>
   In this section, a name is entered and then printed with a welcome message.
-- Dependency Injection<br>
+- **Dependency Injection**<br>
   In this section, dependency injection is implemented within the ViewModel and Repository.
-- Navegation Components<br>
-  Navigation graph is utilized for navigating between fragments in the application.
   
 
 ## Installation
