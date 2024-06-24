@@ -11,6 +11,8 @@
     <string name="task8">Onboarding</string>
     <string name="task9">DI</string>
     <string name="task10">Live Data</string>
+    <string name="task11">Coroutines</string>
+    <string name="task12">Coroutines FIB</string>
 
     <!--linear layout and constraint-->
     <string name="Calculator">Calculator</string>

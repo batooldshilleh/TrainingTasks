@@ -61,6 +61,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnTask10.setOnClickListener {
             navigate("com.example.tasks.liveData.LiveDataActivity")
         }
+        binding.btnTask11.setOnClickListener {
+            navigate("com.example.tasks.coroutine.CoroutineActivity")
+        }
+        binding.btnTask12.setOnClickListener {
+            navigate("com.example.tasks.fibCoroutins.FibActivity")
+        }
     }
 
 

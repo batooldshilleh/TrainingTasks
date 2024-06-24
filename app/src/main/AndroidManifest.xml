@@ -22,6 +22,12 @@
         android:theme="@style/Theme.MyCarApp"
         tools:targetApi="31">
         <activity
+            android:name=".coroutine.CoroutineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fibCoroutins.FibActivity"
+            android:exported="false" />
+        <activity
             android:name=".liveData.LiveDataActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />

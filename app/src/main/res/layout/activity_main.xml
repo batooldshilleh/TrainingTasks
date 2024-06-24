@@ -93,5 +93,23 @@
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="@id/btnTask4"
        app:layout_constraintTop_toBottomOf="@+id/btnTask8" />
+
+   <Button
+       android:id="@+id/btnTask11"
+       android:layout_width="0dp"
+       android:layout_height="56dp"
+       android:text="@string/task11"
+       app:layout_constraintEnd_toEndOf="@+id/btnTask3"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/btnTask9" />
+
+   <Button
+       android:id="@+id/btnTask12"
+       android:layout_width="0dp"
+       android:layout_height="56dp"
+       android:text="@string/task12"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="@id/btnTask4"
+       app:layout_constraintTop_toBottomOf="@+id/btnTask10" />
  
 </androidx.constraintlayout.widget.ConstraintLayout>
