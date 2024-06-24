@@ -5,7 +5,7 @@
 
 This project is an implementation of the concepts of Layout,Fragmint, Navigation Component, Compose, Coroutines, Recyclerview, CameraX, Glide, LiveData, and Dependency Injection.
 
-## Screenshots
+<!--## Screenshots-->
 
 <!--### Main Screen
 <p align="center">
