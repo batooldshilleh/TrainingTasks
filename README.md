@@ -3,7 +3,7 @@
 
 ## Description
 
-This project is an implementation of the concepts of Layout,Fragmint, Navigation Component, Compose, Coroutines, Recyclerview, CameraX, Glide, LiveData, and Dependency Injection.
+This project is an implementation of the concepts of Layout,Fragmint, Navigation Component, Coroutines, Recyclerview, CameraX, Glide, LiveData, and Dependency Injection.
 
 <!--## Screenshots-->
 
@@ -62,18 +62,6 @@ This project is an implementation of the concepts of Layout,Fragmint, Navigation
 
 - **Coroutines:**
   Concepts to understand Coroutines.
-
-- **Compose:**
-  - **First App:**
-    Simple app to understand and work with components.
-
-  - **Basic State:**
-    Understanding state and remember function.
-
-  - **Real World App:**
-    Integration of the above concepts and handling multiple window sizes.
-
-  
 
 ## Installation
 
